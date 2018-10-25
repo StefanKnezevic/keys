@@ -4,19 +4,21 @@
         <meta >
         <title>My CSS Website</title>
         <link rel="stylesheet" href="style.css">
+        <script src="code.js"></script>
     </head>
     <body>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">&#x21EE;</button>
         <nav>
             <ul class="topnav" id="dropdownClick">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#news">News</a></li>
+                <li><a href="#"><img src="logo.svg"></a></li>
+                <li><a href="#news">Novosti</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="#about">About</a></li>
                 <li class="topnav_right">
                     <a href="#login">Log in</a></li>
                 <li class="topnav_right">
                     <a href="#signup">Sign up</a></li>
-                <li class="dropdownIcon"><a href="javascript:avoid(0);" onclick="dropdownMeny()">&#9776;</a></li>
+                <li class="dropdownIcon"><a onclick="dropdownMeny()">&#9776;</a></li>
             </ul>
         </nav>
         <div class="container" id="section_gradient_1">
