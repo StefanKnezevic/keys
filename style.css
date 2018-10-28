@@ -1,12 +1,20 @@
 /*######### Defaults #######*/
+* {
+    box-sizing: border-box;
+}
+
 nav, 
 header, 
 footer {
     display: block;
 }
 
+.section-1{
+    background-color: #eee;
+    padding: 30px;
+}
+
 body {
-    line-height: 1;
     margin: 0;
 }
 
@@ -28,23 +36,100 @@ article p {
 .container {
     width: 100%
     margin: auto;
-    padding-top: 4%;
-    padding-bottom: 4%;
+    padding: 0;
+    padding-bottom: 1%;
 }
 
 .row {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
 }
 
-.row:: after {
-    display: table;
-    clear: both;
-    content: "";
+.child {
+    text-align: center;
+    width: 20%;
+}
+.child-1 {
+    text-align: center;
+    width: 50%;
+}
+.child-1 button {
+    font-size: 20px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+.child-2 {
+    width: 33.3%;
+    text-align: center;
+}
+.child-2 img {
+    height: auto;
+    width: 40px;
+}
+.child-2 p a {
+    font-size: 15px;
+    font-family: fantasy;
+    color: black;
+}
+.child-3 {
+    width: 100%;
+    text-align: center;
 }
 
+textarea {
+    width: 87%;
+    height: 75px;
+    padding: 5px;
+    border: 1px black solid;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+div input {
+    width: 60%;
+    height: 35px;
+    border: 1px black solid;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 15px;
+}
+
+section.baner {
+    padding: 7em 0 7em 0;
+    background-attachment: fixed;
+    background-position: center top;
+    background-image: url(Key.jpg);
+    background-size: cover;
+    text-align: center;
+    opacity: .8;
+}
+.section-1 > * {
+    text-align: center;
+    margin: 0;
+    color: burlywood;
+}
+.section-1 h2 {
+    font-size: 40px;
+    padding: 5px;
+    
+}
+
+.image-about {
+    border: 9px antiquewhite solid;
+    border-radius: 50%;
+    padding: 25px;
+}
+
+figcaption {
+    font-family: fantasy;
+    padding-top: 6px;
+}
 
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
@@ -59,11 +144,6 @@ article p {
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
-
-* {
-    box-sizing: border-box;
-}
-
 #myBtn {
   display: none;
   position: fixed;
@@ -74,14 +154,20 @@ article p {
   border: none;
   outline: none;
   background-color: blue;
-  color: white;
+  color: antiquewhite;
   cursor: pointer;
-  padding: 5px;
-  border-radius: 5px;
+  padding: 8px;
+  border-radius: 50%;
 }
 
 #myBtn:hover {
   background-color: #555;
+}
+
+#map {
+        width: 100%;
+        height: 400px;
+        background-color: grey;
 }
 /*########### Nav bar ##########*/
 nav { 
@@ -100,20 +186,19 @@ ul.topnav li {
     list-style: none;
     float: left;
 }
+a {
+    text-decoration: none;
+    text-align: center;
 
-ul.topnav li.topnav_right {
-    float: right;
 }
-
 ul.topnav li a { 
     display: flex;
+    justify-content: space-around;
+    width: 100%;
     align-items: center;
-    text-decoration:  none;
     min-height: 45px;
     padding-left: 7px;
     padding-right: 7px;
-    text-align: center;
-    text-transform: capitalize;
     color: #666;
 }
 
@@ -132,102 +217,24 @@ ul.topnav li.dropdownIcon {
 
 /*####### Custom styles ########*/
 
-#section_gradient_1 {
-    background: #79abfc;
-    background: -webkit-linear-gradient(#79abfc, #2e4468);
-    background: -o-linear-gradient(#79abfc, #2e4468);
-    background: -moz-linear-gradient(#79abfc, #2e4468);
-    background: linear-gradient(#79abfc, #2e4468);
+.baner h1 {
+    font-size: 40px;
+    color: red;
 }
-
-div.box {
-    text-align: center;
-    border-radius: 7px;
-    margin: 24px;
-    padding: 36px 24px 40px 24px;
-    background-color: #fff;
-    box-shadow: 0 0 0 1px rgba(0,0,0, .15), 0 2px 3px 0 rgba(0,0,0,.1);
+mark {
+    background-color: antiquewhite;
 }
-
-div.slopeIcon img {
-    display: block;
-    margin: auto;
-    box-shadow: -2px/*H*/ -2px/*V*/ 20px/*B*/ 2px/*S*/ rgba(0 /*Shadow*/,0/*Background*/,0/*Box-color*/,.15/*Opacity*/), 2px 2px 17px 2px rgba(0,0,0,1);
-}
-
-button { 
-    color: #fff;
-    background-color: #0069ff;
-    font-size: 32px;
-    font-weight: 700;
-    padding: 15px 60px;
-    display: block;
-    margin: 5px;
-    text-align: center;
+.baner p a {
+    background-color: mediumvioletred;
+    padding: 10px;
+    text-decoration: none;
+    color: ghostwhite;
     border-radius: 7px;
 }
 
-button.learnMore {
-    display: block;
-    margin: auto;
-}
-
-div.icon {
-    width: 100%;
-}
-
-div.leftSide_col {
-    margin-left: 30%;
-}
-
-div.rightSide_col{
-    margin-left: 15%;
-}
-
-h1.large {
-    color: #fff;
-    font-size: 56px;
-    margin: 0;
-    line-height: 70px;
-}
-
-h1.section2Header {
-    font-size: 65px;
-    text-align: center;
-}
-
-form h2 {
-    color: white;    
-}
-
-input[type="text"] {
-    font-size: 20px;
-    width: 400px;
-    min-width: 100px;
-    padding: 5px;
-    border-radius: 7px;
-}
-
-footer.footsy {
-    background-color: #666;
-    padding-left: 10%;
-}
-
-footer.footsy h1 {
-    color: #fff;
-    font-size: 35px;
-}
-
-footer.footsy ul {
-    list-style: none;
-    text-align: left;
-    padding-left: 0;
-}
-
-footer.footsy ul li  {
-    color: #fff;
-    font-size: 22px;
-    line-height: 1.5;
+.baner h2 {
+    font-size: 25px;
+    color: black;
 }
 
 /*######### MOBILE #######*/
@@ -235,6 +242,10 @@ footer.footsy ul li  {
 @media screen and (max-width: 680px) {
     ul.topnav li:not(:nth-child(1)) {
         display: none;
+    }
+    .child {
+    text-align: center;
+    width: 50%;
     }
     ul.topnav li.dropdownIcon {
         display: block;
@@ -257,13 +268,9 @@ footer.footsy ul li  {
         text-align: left;
     }
     
-    h1.section2Header {
-        font-size: 50px;    
-    }
-    
     .col-6, .col-4, .col-5, .col-7  {
-    width: 100%;
-    margin: 0;
+        width: 100%;
+        margin: 0;
     }
     
     div.mobileStack {
@@ -275,8 +282,12 @@ footer.footsy ul li  {
         margin: 15px;
     }
     
-    input[type="text"] {
-        width: 350px;
+    .child-2 {
+        width: 100%;
+    }
+    
+    textarea, div input {
+        width: 85%;
     }
     
     .videoContainer iframe {

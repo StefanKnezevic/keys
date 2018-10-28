@@ -2,141 +2,138 @@
 <html lang="en">
     <head>
         <meta >
-        <title>My CSS Website</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="code.js"></script>
+        <title>Mehanika 037</title>
+        <link rel="icon" type="image/gif/png" href="logo-copy.png">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script type="text/javascript" src="code.js"></script>
     </head>
     <body>
-        <button onclick="topFunction()" id="myBtn" title="Go to top">&#x21EE;</button>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">&#8679</button>
         <nav>
             <ul class="topnav" id="dropdownClick">
                 <li><a href="#"><img src="logo.svg"></a></li>
                 <li><a href="#news">Novosti</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#about">About</a></li>
-                <li class="topnav_right">
-                    <a href="#login">Log in</a></li>
-                <li class="topnav_right">
-                    <a href="#signup">Sign up</a></li>
-                <li class="dropdownIcon"><a onclick="dropdownMeny()">&#9776;</a></li>
+                <li><a href="#coding">Kodiranje</a></li>
+                <li><a href="#cutting">Rezanje</a></li>
+                <li><a href="#etching">Graviranje</a></li>
+                <li><a href="#edging">Oštrenje</a></li>
+                <li><a href="#repair-sewing-machine">Popravka šivaćih mašina</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+                <li class="dropdownIcon"><a href="javascript:avoid(0);" onclick="dropdownMeny()">&#9776;</a></li>
             </ul>
         </nav>
-        <div class="container" id="section_gradient_1">
+        <section class="baner">
+            <p><a href="tel:0652076335">065/207-63-35</a></p>
+            <h1><mark>BRAVAR - KRUŠEVAC - HITNE INTERVENCIJE </mark></h1>
+            <h2><mark> Kodiranje - Rezanje - Graviranje - Oštrenje - Popravka šivaćih mašina</mark></h2>
+            <p><a href="#Usluge">USLUGE</a></p><p><a href="#About"> O NAMA</a></p>
+        </section>
+        <section id="Usluge" class="section-1">
+            <div></div><h2>USLUGE</h2>
+            <p>brzo, kvalitetno, povoljno</p>
+        </section>
+        <section>
             <div class="row">
-                <div class="col-6">
-                    <div class="leftSide_col">
-                        <h1 class="large">Awesome</h1>
-                        <h1 class="large">Site to Devslopers</h1>
-                    </div>
-                    <form>
-                        <div class="leftSide_col">
-                            <h2>Username</h2>
-                            <input class="inputbox" type="text" name="username" placeholder="Username">
-                            <h2>Password</h2>
-                            <input class="inputbox" type="text" name="password" placeholder="Password">
-                        </div>
-                    </form>
+                <div class="child">
+                    <img class="image-about" src="otvaranje-automobila.jpg">
+                    <figcaption>OTVARANJE AUTOMOBILA BEZ OŠTEĆENJA</figcaption>
                 </div>
-                <div class="col-6">
-                    <div class="rightSide_col">
-                        <div class="videoContainer">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/rYeSA1vgIUE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
-                    </div>
+                <div class="child">
+                    <img class="image-about" src="lasersko-graviranje1.jpg">
+                    <figcaption>LASERSKO GRAVIRANJE</figcaption>
                 </div>
-            </div>
-        </div>
-        <header>
-            <h1 class="section2Header">The standards of Awesomenes</h1>
-            <div class="container">
-                <div class="row">
-                    <div class="col-4">
-                        <div class="box">
-                            <div class="icon">
-                                <img src = "https://docs.google.com/uc?id=1385jqgILDYweVXgUsi7i1Qav2b8YaOPy">
-                            </div>
-                            <label>Chat with me</label>
-                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="box">
-                            <div class="icon">
-                                <img src = "https://docs.google.com/uc?id=1385jqgILDYweVXgUsi7i1Qav2b8YaOPy">
-                            </div>
-                            <label>Learn to Code</label>
-                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="box">
-                            <div class="icon">
-                                <img src = "https://docs.google.com/uc?id=1385jqgILDYweVXgUsi7i1Qav2b8YaOPy">
-                            </div>
-                            <label>Build an Empire</label>
-                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                    </div>
+                <div class="child">
+                    <img class="image-about" src="kljuc.jpg">
+                    <figcaption>KODIRANJE KLJUČEVA</figcaption>
                 </div>
-                <div class="row">
-                    <div class="col-12">
-                        <button class="learnMore">Learn More</button>
-                    </div>
+                <div class="child">
+                    <img class="image-about" src="popravka-brava-i-kljuceva.jpg">
+                    <figcaption>POPRAVKA I SERVIS BRAVA I KLJUČEVA</figcaption>
+                </div>
+                <div class="child">
+                    <img class="image-about" src="sewing-machine-icon.jpg">
+                    <figcaption>POPRAVKA ŠIVAĆIH MAŠINA</figcaption>
                 </div>
             </div>
-            <hr>
-            <div class="container">
-                <div class="row">
-                    <div class="col-7">
-                        <article>
-                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </article>
-                    </div>
-                    <div class="col-5">
-                        <div class="slopeIcon">
-                            <img class="" src=https://drive.google.com/uc?id=1vJtqU72pYa34jSLw3Y3Pzecp8jcvAcw7>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </header>
-
-        <footer class="footsy">
+        </section>
+        <section id="About" class="section-1">
+            <h2>O NAMA</h2>
+            <p>dugogodišnje iskustvo, profesionalno i iskusno od pocetka, davne <strong>1993</strong></p>
+        </section>
+        <section>
             <div class="row">
-                <div class="col-3 mobileStack">
-                    <h1>Company</h1>
-                    <ul>
-                        <li>About</li>
-                        <li>Blog</li>
-                        <li>Careers</li>
-                    </ul>
+                <div class="child-1">
+                    <h2>Kada Vam je potrebna pomoć u <i>ključnim</i> situacijama, tim radnika Vam je na raspolaganju</h2>
                 </div>
-                <div class="col-3  mobileStack">
-                    <h1>Company</h1>
-                    <ul>
-                        <li>About</li>
-                        <li>Blog</li>
-                        <li>Careers</li>
-                    </ul>
-                </div>
-                <div class="col-3 mobileStack">
-                    <h1>Company</h1>
-                    <ul>
-                        <li>About</li>
-                        <li>Blog</li>
-                        <li>Careers</li>
-                    </ul>
-                </div>
-                <div class="col-3 mobileStack">
-                    <h1>Company</h1>
-                    <ul>
-                        <li>About</li>
-                        <li>Blog</li>
-                        <li>Careers</li>
-                    </ul>
+                <div class="child-1">
+                    <p>Radimo bez ostecenja na svim delovima vaseg stana, automobila, kao i sivacih masina. Uverite se u nase dogogodisnje iskustvo, tako sto cete nam se obratiti putem e-maila, ili pozvati na broj telefona. Dolaskom u radnju, sacekace Vas nasi radnici i u najkracem mogucem roku pomoci oko problema koji imate i reci Vam za koliko vremena cete imati resen problem u Vasim rukama.
+                    </p>
                 </div>
             </div>
-        </footer>
+        </section>
+        <section id="contact" class="section-1">
+            <h2>KONTAKT</h2>
+            <div id="map"></div>
+        </section>
+        <script>
+            // Initialize and add the map
+            function initMap() {
+                // The location of Uluru
+                var uluru = {lat: 43.580, lng: 21.326};
+                // The map, centered at Uluru
+                var map = new google.maps.Map(
+                    document.getElementById('map'), {zoom: 16, center: uluru});
+                // The marker, positioned at Uluru
+                var marker = new google.maps.Marker({position: uluru, map: map});
+            }
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCA0AoqEwFfq8--W1hAVLPvL-v8MCT-Ic&callback=initMap" type="text/javascript"></script>
+        <form action="">
+            <div class="row">
+                <div class="child-2">
+                    <h2>Ime i prezime:</h2> 
+                    <input type="text" placeholder="Vaše ime i prezime" required>
+                </div>
+                <div class="child-2">
+                    <h2>Telefon:</h2> 
+                    <input type="number" placeholder="Vaš broj telefona" required>
+                </div>
+                <div class="child-2">
+                    <h2>E-mail:</h2> 
+                    <input type="email" placeholder="Vaš e-mail" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="child-3">
+                    <textarea name="textarea" placeholder="Vaša poruka... " enabled></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="child-1">
+                    <button type="submit" value="Submit">Posalji upit</button>
+                </div>
+                <div class="child-1">
+                    <button type="reset" value="Reset">Ponovi unos</button>
+                </div>
+            </div>
+        </form>
+        <section class="section-1">
+            <div class="row">
+                <div class="child-2">
+                    <img src="google-maps-marker.png"> 
+                    <p><a href="https://www.google.rs/maps/place/Obilic%CC%81eva+3,+Kru%C5%A1evac/@43.58019,21.3250587,17z/data=!3m1!4b1!4m5!3m4!1s0x475687ef95d86721:0x70e0ed9580795ce6!8m2!3d43.58019!4d21.3272474" target="_blank">Obilićeva 3, 37000 Kruševac</a></p>
+                </div>
+                <div class="child-2">
+                    <img src="gmail-email.png">
+                    <p><a href="mailto:knezknezevicstefan@gmail.com?subject=Pitanje u vezi&body=Poštovani," target="_blank">knezknezevicstefan@gmail.com</a></p>
+                </div>
+                <div class="child-2">
+                    <img src="phone-logo.png">
+                    <p><a href="tel:0628778172">0628778172</a></p>
+                    <p><a href="tel:0652076335">0652076335</a></p>
+                </div>
+            </div>
+        </section>
         <script>
             function dropdownMeny() {
                 var x = document.getElementById("dropdownClick");
