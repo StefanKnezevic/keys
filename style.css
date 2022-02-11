@@ -114,6 +114,10 @@ section.baner {
     margin: 0;
     color: burlywood;
 }
+.section-1 ul {
+    text-align: left;
+    font-size: 20px;
+}
 .section-1 h2 {
     font-size: 40px;
     padding: 5px;
