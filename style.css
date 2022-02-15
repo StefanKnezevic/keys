@@ -128,11 +128,11 @@ section.baner {
 .section-1 ul {
     text-align: left;
     font-size: 20px;
-    color: #244afb;
+    /* color: #244afb; */
 }
 .section-1 h2 {
     font-size: 40px;
-    padding: 5px;
+    padding-top: 30px;
     
 }
 
@@ -164,22 +164,24 @@ figcaption {
   display: none;
   position: fixed;
   bottom: 20px;
-  right: 30px;
+  right: 20px;
   z-index: 99;
-  font-size: 30px;
+  font-size: 40px;
   border: none;
   outline: none;
-  background-color: blue;
-  color: antiquewhite;
+  color: blue;
   cursor: pointer;
   padding: 8px;
   border-radius: 50%;
 }
 
 #myBtn:hover {
-  background-color: #555;
+    font-size: 35px;
+    color:red;
 }
-
+button {
+    background-color: transparent;
+}
 #map {
         width: 100%;
         height: 400px;
@@ -216,6 +218,7 @@ ul.topnav li a {
     padding-left: 7px;
     padding-right: 7px;
     color: #666;
+    font-size: 18px;
 }
 
 ul.topnav li a img {
@@ -233,13 +236,13 @@ ul.topnav li.dropdownIcon {
 
 /*####### Custom styles ########*/
 
-.baner h1 {
-    font-size: 40px;
-    color: red;
+.baner h1, .baner h2 {
+    font-size: 39px;
+    -webkit-text-stroke: 2px #00ff14;
+    color: transparent;
+    font-family: sans-serif;
 }
-mark {
-    background-color: antiquewhite;
-}
+
 .baner p a {
     background-color: #244afb;
     padding: 10px;
@@ -249,8 +252,7 @@ mark {
 }
 
 .baner h2 {
-    font-size: 25px;
-    color: black;
+    font-size: 30px;
 }
 
 /*######### MOBILE #######*/
@@ -301,6 +303,9 @@ mark {
     .child-2 {
         width: 100%;
     }
+    .child-2 p {
+        padding: 0px;    
+    }
     
     textarea, div input {
         width: 85%;
@@ -323,5 +328,25 @@ mark {
     
     div.slopeIcon img {
         width: 100%;
+    }
+    section {
+        padding: 0px;
+    }
+    section.section-1 {
+        padding: 0px;
+    }
+    .section-1 p {
+        text-align: center;
+        padding: 20px;
+    }
+    div.child-1 p {
+        padding: 20px;
+    }
+    .row {
+        padding: 10px;
+    }
+    div.child-2 p {
+        padding: 0px;
+
     }
 }
