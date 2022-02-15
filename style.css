@@ -2,20 +2,20 @@
 * {
     box-sizing: border-box;
 }
-
+body {
+    margin: 0;
+    background-color: #eee;
+}
 nav, 
 header, 
 footer {
     display: block;
+    padding: 0 5% 0 5%;
+
 }
 
 .section-1{
-    background-color: #eee;
     padding: 30px;
-}
-
-body {
-    margin: 0;
 }
 
 label {
@@ -53,7 +53,7 @@ article p {
     width: 20%;
 }
 .child-1 {
-    text-align: center;
+    text-align: justify;
     width: 50%;
 }
 .child-1 button {
@@ -99,7 +99,18 @@ div input {
     padding: 5px;
     font-size: 15px;
 }
-
+div.child-1 p {
+    padding: 0 30px 0 30px;
+}
+section {
+    padding: 0 5% 0 5%;
+}
+section.section-1 {
+    padding: 0 5% 0 5%;
+}
+section#contact.section-1 {
+    padding: 0 0% 0 0%;
+}
 section.baner {
     padding: 7em 0 7em 0;
     background-attachment: fixed;
@@ -112,11 +123,12 @@ section.baner {
 .section-1 > * {
     text-align: center;
     margin: 0;
-    color: burlywood;
+    color: black;
 }
 .section-1 ul {
     text-align: left;
     font-size: 20px;
+    color: #244afb;
 }
 .section-1 h2 {
     font-size: 40px;
@@ -125,7 +137,7 @@ section.baner {
 }
 
 .image-about {
-    border: 9px antiquewhite solid;
+    border: 9px #244afb solid;
     border-radius: 50%;
     padding: 25px;
 }
@@ -229,7 +241,7 @@ mark {
     background-color: antiquewhite;
 }
 .baner p a {
-    background-color: mediumvioletred;
+    background-color: #244afb;
     padding: 10px;
     text-decoration: none;
     color: ghostwhite;
