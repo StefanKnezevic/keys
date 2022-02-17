@@ -67,6 +67,7 @@ article p {
 .child-2 {
     width: 33.3%;
     text-align: center;
+    background-color: #eee;
 }
 .child-2 img {
     height: auto;
@@ -74,7 +75,6 @@ article p {
 }
 .child-2 p a {
     font-size: 15px;
-    font-family: fantasy;
     color: black;
 }
 .child-3 {
@@ -115,10 +115,10 @@ section.baner {
     padding: 7em 0 7em 0;
     background-attachment: fixed;
     background-position: center top;
-    background-image: url(Key.jpg);
+    background-image: url(Key2.jpg);
     background-size: cover;
     text-align: center;
-    opacity: .8;
+    opacity: 1;
 }
 .section-1 > * {
     text-align: center;
@@ -143,7 +143,6 @@ section.baner {
 }
 
 figcaption {
-    font-family: fantasy;
     padding-top: 6px;
 }
 
@@ -238,7 +237,7 @@ ul.topnav li.dropdownIcon {
 
 .baner h1, .baner h2 {
     font-size: 39px;
-    -webkit-text-stroke: 2px #00ff14;
+    -webkit-text-stroke: 2.5px #244afb;
     color: transparent;
     font-family: sans-serif;
 }
@@ -298,6 +297,9 @@ ul.topnav li.dropdownIcon {
     
     div.leftSide_col, div.rightSide_col {
         margin: 15px;
+    }
+    .child-1 {
+        width: 100%;
     }
     
     .child-2 {
