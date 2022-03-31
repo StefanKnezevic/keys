@@ -1,4 +1,4 @@
-const trainSchedule = [
+const trainScheduleTosin = [
     { "broj_voza": "8001", "polazak": "06:13:00 AM" },
     { "broj_voza": "8005", "polazak": "06:43:00 AM" },
     { "broj_voza": "8009", "polazak": "07:13:00 AM" },
@@ -24,10 +24,47 @@ const trainSchedule = [
     { "broj_voza": "8085", "polazak": "18:43:00 PM" },
     { "broj_voza": "8087", "polazak": "19:13:00 PM" },
     { "broj_voza": "8091", "polazak": "20:13:00 PM" },
-    { "broj_voza": "8097", "polazak": "21:43:00 PM" }
+    { "broj_voza": "8097", "polazak": "21:43:00 PM" },
 ]
 
-const getTime = () => {
+const trainScheduleVukov = [
+    { "broj_voza": "8002", "polazak": "06:33:00 AM" },
+    { "broj_voza": "8006", "polazak": "07:03:00 AM" },
+    { "broj_voza": "8010", "polazak": "07:33:00 AM" },
+    { "broj_voza": "8014", "polazak": "08:03:00 AM" },
+    { "broj_voza": "8018", "polazak": "08:33:00 AM" },
+    { "broj_voza": "8022", "polazak": "09:03:00 AM" },
+    { "broj_voza": "8026", "polazak": "09:33:00 AM" },
+    { "broj_voza": "8032", "polazak": "10:18:00 AM" },
+    { "broj_voza": "8036", "polazak": "10:48:00 AM" },
+    { "broj_voza": "8038", "polazak": "11:18:00 AM" },
+    { "broj_voza": "8040", "polazak": "11:48:00 AM" },
+    { "broj_voza": "8042", "polazak": "12:18:00 PM" },
+    { "broj_voza": "8046", "polazak": "13:18:00 PM" },
+    { "broj_voza": "8052", "polazak": "14:18:00 PM" },
+    { "broj_voza": "8054", "polazak": "14:33:00 PM" },
+    { "broj_voza": "8058", "polazak": "15:03:00 PM" },
+    { "broj_voza": "8062", "polazak": "15:33:00 PM" },
+    { "broj_voza": "8066", "polazak": "16:03:00 PM" },
+    { "broj_voza": "8070", "polazak": "16:33:00 PM" },
+    { "broj_voza": "8074", "polazak": "17:03:00 PM" },
+    { "broj_voza": "8078", "polazak": "17:33:00 PM" },
+    { "broj_voza": "8084", "polazak": "18:18:00 PM" },
+    { "broj_voza": "8086", "polazak": "18:48:00 PM" },
+    { "broj_voza": "8088", "polazak": "19:18:00 PM" },
+    { "broj_voza": "8092", "polazak": "20:18:00 PM" },
+    { "broj_voza": "8094", "polazak": "20:48:00 PM" },
+    { "broj_voza": "8096", "polazak": "21:33:00 PM" },
+    { "broj_voza": "8342", "polazak": "22:41:00 PM" },
+    { "broj_voza": "8100", "polazak": "23:03:00 PM" }
+]
+
+const getTime = (data) => {
+    console.log('********************');
+    let trainSchedule = trainScheduleTosin
+    if (data === 'vukov') {
+        trainSchedule = trainScheduleVukov
+    }
     const currentHour = new Date().toLocaleTimeString().split(':')[0]
     const currentMinute = new Date().toLocaleTimeString().split(':')[1]
     const result = trainSchedule.map((data) => {
@@ -48,5 +85,12 @@ const buildTable = (data) => {
     return table
 }
 
-console.log('getTime', getTime());
-
+// const ocisti = () => {
+//     let x = document.getElementById("myTable");
+//     if (x.style.display === "none") {
+//         x.style.display = "block";
+//     } else {
+//         x.style.display = "none";
+//     }
+// }
+// console.log('getTime', getTime());

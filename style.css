@@ -254,6 +254,10 @@ ul.topnav li.dropdownIcon {
     font-size: 30px;
 }
 
+table, th, td {
+  border: 1px solid;
+}
+
 /*######### MOBILE #######*/
 
 @media screen and (max-width: 680px) {
